@@ -1,25 +1,3 @@
-/*
- Theme Name: Event4
- Theme URI: http://newtemplate.net/demo/event4/index.html
- Author: NewTemplate
- Author URI: https://themeforest.net/user/newtemplete
- Version: 0.1.2
- Description:  Event4 One Page HTML5 Theme comes out with tons of powerful features. Its modern, attractive and clean design.
-*/
-
-/*-----------------------------------------------------------------------------------
-
- [Table of contents]
-
- 1.0 Web loader
- 2.0 Sticky Header
- 3.0 Speaker
- 4.0 Smooth Scroll
- 5.0 Conference Schedule
- 6.0 Statistic
- 7.0 Ajax registration form
-
- */
 
 (function ($) {
 
