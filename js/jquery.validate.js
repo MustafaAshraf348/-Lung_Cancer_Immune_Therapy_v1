@@ -1,11 +1,4 @@
-/*
- Theme Name: Event4
- Theme URI: http://newtemplate.net/demo/event4/index.html
- Author: NewTemplate
- Author URI: https://themeforest.net/user/newtemplete
- Version: 0.1.2
- Description:  Event4 One Page HTML5 Theme comes out with tons of powerful features. Its modern, attractive and clean design.
-*/
+
 
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
