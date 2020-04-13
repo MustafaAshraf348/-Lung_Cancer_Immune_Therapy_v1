@@ -1,0 +1,1967 @@
+/*
+ Theme Name: Event4
+ Theme URI: http://demo.newtemplate.net/event4/index.html
+ Author: NewTemplate
+ Author URI: https://themeforest.net/user/newtemplete
+ Version: 0.1.1
+ Description:  Event4 One Page HTML5 Theme comes out with tons of powerful features. Its modern, attractive and clean design.
+*/
+
+/*-----------------------------------------------------------------------------------
+
+ [Table of contents]
+ 
+1.0 General
+2.0 Header (Logo or navigation)
+3.0 Home (Section)
+4.0 About (Section)
+5.0 Statistic (Section)
+6.0 Keynote Speakers (Section)
+7.0 Conference Schedule (Section)
+8.0 Sponsorship (Section)
+9.0 Sponsors & Partners (Section)
+10.0 Register Now (Section)
+11.0 Contact (Section)
+12.0 Subscription and Social Media
+13.0 Footer
+14.0 Media Queries
+*/
+
+/**
+ * 1.0 General
+ * -----------------------------------------------------------------------------
+ */
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.85em;
+    font-family: 'Poppins', sans-serif;
+    color: #242732;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+}
+
+img {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    color: #ed1c94;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input, a:focus {
+    outline: 0;
+}
+
+.btn:focus {
+    box-shadow: none
+}
+
+p {
+    padding-bottom: 10px;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+/* Preloader */
+.preloader {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.preloader .loader {
+    width: 60px;
+    height: 60px;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.preloader .loader:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #ed1c94;
+    border-right: 2px solid #2575fc;
+    border-bottom: 2px solid #2575fc;
+    border-left: 2px solid #2575fc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    -ms-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.preloader i:before {
+    font-size: 35px;
+}
+
+/* Preloader animation */
+@-webkit-keyframes spin {
+    form {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    form {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Spacer */
+.spacer_30vh {
+    height: 30px
+}
+
+.spacer_20vh {
+    height: 20px
+}
+
+.spacer_10vh {
+    height: 10px
+}
+
+/* Button */
+.btn-ntPrimaryFull {
+    min-width: 120px !important;
+    background-color: #ed1c94 !important;
+    border: 2px solid #ed1c94 !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    letter-spacing: 1px !important;
+    border-radius: 50px !important;
+    outline: none !important;
+    display: inline-block !important;
+    margin-right: 10px !important;
+    cursor:pointer;
+}
+
+.btn-ntPrimaryFull:hover {
+    border: 2px solid #ed1c94 !important;
+    background-color: transparent !important;
+    color: #ed1c94 !important;
+}
+
+.btn-ntPrimaryBorder {
+    min-width: 120px;
+    background-color: transparent;
+    border: 2px solid #ed1c94;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ed1c94;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    outline: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-ntPrimaryBorder:hover {
+    border: 2px solid #ed1c94;
+    background-color: #ed1c94;
+    color: #ffffff;
+}
+
+.btn.ntLargexx {
+    font-size: 16px;
+    padding: 16px 29px;
+}
+
+.btn.ntLarge {
+    font-size: 14px;
+    padding: 14px 27px;
+}
+
+.btn.ntMedium {
+    font-size: 12px;
+    padding: 12px 25px;
+}
+
+.btn.ntSmall {
+    font-size: 10px;
+    padding: 10px 23px;
+}
+
+/* Way Point */
+.ntWayPoint {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% - 2px);
+    display: flex;
+    cursor: pointer;
+}
+
+.ntWayPoint::after {
+    content: '';
+    background-image: url('../images/way-point.svg');
+    width: 253px;
+    height: 38px;
+}
+
+.ntWayPoint i {
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+    animation: bounce_10px 2s ease infinite;
+}
+
+.ntWayPoint:hover i {
+    top: 15px;
+}
+
+/* Section Heading */
+
+span.btm-bar {
+    background: url('../images/h1-btm-bar.png') no-repeat;
+    width: 130px;
+    height: 17px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+span.btm-bar-white {
+    background: url('../images/bar-white.png') no-repeat;
+    width: 130px;
+    height: 17px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/**
+ * 2.0 Header (Logo or navigation)
+ * -----------------------------------------------------------------------------
+ */
+
+/*Logo*/
+#logo_home {
+    position: relative;
+    z-index: 3;
+}
+
+#logo_home {
+    margin-bottom: 0;
+}
+
+#logo_home a {
+    width: 229px;
+    height: 50px;
+    display: block;
+    background-image: url('../images/logo2.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -9999px;
+}
+
+/*Navigation*/
+.ntNavbar {
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+}
+
+.ntNavbar li {
+    position: relative
+}
+
+.ntNavbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 15px;
+    display: block;
+    position: relative;
+}
+
+.ntNavbar li a.active,
+.ntNavbar li a:hover {
+    color: #ff0092;
+    text-shadow: none;
+}
+
+.ntNavbar li a:before {
+    content: "";
+    position: absolute;
+    background-color: #ed1c94;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    height: 2px;
+    bottom: -5px;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+}
+
+.ntNavbar li a:hover:before,
+.ntNavbar li a.active:before,
+.ntNavbar li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*Sticky Header*/
+.ntHeader.fixed {
+    z-index: 4;
+    position: fixed;
+    border-bottom: 0;
+    padding: 10px 0;
+    transition: 450ms ease-out;
+}
+
+.ntHeader.fixed.slideDown {
+    top: 0;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 2px rgba(50, 50, 50, 0.4);
+}
+
+.fixed .ntNavbar li a {
+    color: #242732;
+}
+
+.fixed #logo_home a {
+    background-image: url('../images/logo-color-fixed.png');
+    width: 191px;
+    height: 38px;
+}
+
+.ntInnerSection {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+
+.ntInnerSectionRegister {
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+
+/*Mobile Nav*/
+.navbar {
+    padding: 0;
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: 9;
+    right: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    text-shadow: none;
+    outline: 0;
+}
+
+/**
+ * 3.0 Home (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntHome {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../images/header-area1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #fff;
+    min-height: 570px;
+}
+
+.ntHome.particles{
+    background-image: url('../images/header-area-01.html');
+}
+
+.ntHome:before {
+    content: '';
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    opacity: 0.6;
+}
+
+.ntHeader {
+    width: 100%;
+    padding: 20px 0;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+}
+
+.ntHome .ntWayPoint {
+    bottom: -2px;
+    z-index: 2;
+}
+
+.ntHome .ntWayPoint::after {
+    content: '';
+    background-image: url('../images/way-point-white.svg');
+    width: 253px;
+    height: 38px;
+}
+
+.ntHome .ntWayPoint i {
+    text-align: center;
+    color: #ed1c94;
+    top: 15px;
+}
+
+span.line {
+    border-top: 2px solid #ed1c94;
+    display: block;
+    margin-top: 15px;
+}
+
+/*Main Title*/
+.mainTitle {
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    width: 520px;
+    bottom: 25%;
+}
+
+.mainTitle .location {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.mainTitle span.where,
+.mainTitle span.when {
+    float: left;
+    display: block;
+    width: 50%;
+    font-weight: 400;
+    text-shadow: 1px 1px 0px #0000007a;
+    font-size: 18px;
+}
+
+.mainTitle .location span i {
+    background: #ed1c94;
+    padding: 15px 20px;
+    margin-right: 15px;
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.mainTitle .location span b {
+    display: block;
+    text-transform: uppercase;
+    color: #ed1c94;
+    font-weight: 700;
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0px;
+}
+
+.mainTitle h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 50px;
+    text-shadow: 1px 1px 0px #0000001a;
+    text-align: left;
+}
+
+.mainTitle p {
+    font-weight: 300;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-shadow: 1px 1px 0px #0000001a;
+}
+
+.mainTitle h1 b {
+    color: #ffffff;
+}
+
+.mainTitle .btn-ntPrimaryBorder {
+    color: #ffffff;
+}
+
+.mainTitle .btn-ntPrimaryBorder:hover {
+    border-color: #ed1c94;
+}
+
+.mainTitle .btn-ntPrimaryFull:hover {
+    color: #ffffff;
+}
+
+@media screen and (max-height: 768px) {
+    .mainTitle {
+        bottom: 15%;
+    }
+}
+
+.cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.cd-words-wrapper b.is-visible {
+    position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+    opacity: 0;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+/* Text Clip Animation */
+.cd-headline.clip span {
+    display: inline-block;
+    padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 75px;
+    display: block;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #aebcb9;
+}
+
+.cd-headline.clip b {
+    opacity: 0;
+}
+
+.cd-headline.clip b.is-visible {
+    opacity: 1;
+}
+
+/**
+ * 4.0 About (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntAbout {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.ntAboutThumb {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.ntAboutThumb img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.ntAboutThumb h3 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ntAboutThumb p {
+    margin: 0;
+}
+
+.ntAboutThumb a {
+
+}
+
+/**
+ * 5.0 Statistic (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntCounter_typeRegister {
+    padding-bottom: 30px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+    .ntCounter_typeRegister i {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 95px;
+        text-align: center;
+        display: block;
+        opacity: 0.2;
+        position: absolute;
+        left: 10%;
+        top: 10px;
+    }
+
+    .ntCounter_typeRegister h3 {
+        font-weight: 900;
+        display: block;
+        font-size: 50px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .ntCounter_typeRegister span.ntCounterTitle {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+.ntCounter_type {
+    padding-bottom: 80px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.ntCounter_type i {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 95px;
+    text-align: center;
+    display: block;
+    opacity: 0.2;
+    position: absolute;
+    left: 10%;
+    top: 10px;
+}
+
+.ntCounter_type h3 {
+    font-weight: 900;
+    display: block;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ntCounter_type span.ntCounterTitle {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+/**
+ * 6.0 Keynote Speakers (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntSpeaker {
+    background-color: #f7f9fb;
+    transition: 450ms ease-out;
+    padding-bottom: 80px;
+}
+
+.ntSpeaker .btn {
+    margin-top: 25px;
+}
+
+.ntSuperTitle {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+
+.ntSubTitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ntSpeaker .ntSubTitle {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Speakers Items */
+.ntOurSpeakersItem {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.ntOurSpeakersItem::after,
+.ntOurSpeakersItem::before {
+    width: 95.5555%;
+    height: 93.5555%;
+    margin: 2.6666%;
+}
+
+.ntOurSpeakersItem:hover::after,
+.ntOurSpeakersItem:hover::before {
+    -webkit-transform: scale(0);
+}
+
+.ntOurSpeakersItem img {
+    width: 100%;
+    display: block;
+}
+
+.ntOurSpeakersItem .caption {
+    position: absolute;
+    bottom: 0;
+    background: #ffffffbd;
+    width: 100%;
+    padding: 25px 20px;
+}
+
+.ntOurSpeakersItem .ntSuperTitle {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6a11cb;
+    margin-bottom: 2px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    line-height: 10px;
+    font-weight: 600;
+}
+
+.ntOurSpeakersItem .ntSubTitle {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.ntOurSpeakersItem h3 {
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.ntOurSpeakersItem h3::after {
+    content: '';
+    clear: both;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #ff0092;
+    margin-top: 3px;
+}
+
+.ntOurSpeakersItem .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(106, 17, 203, 0.78) 0%, rgba(37, 117, 252, 0.86) 100%);
+    padding: 30px;
+    display: none;
+    color: #ffffff;
+    padding-top: 40%;
+}
+
+.ntOurSpeakersItem .overlay .ntSuperTitle {
+    color: #fff
+}
+
+.ntOurSpeakersItem .overlay .ntSubTitle {
+    color: #fff;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.ntOurSpeakersItem .overlay h3::after {
+    border-color: #fff;
+}
+
+/**
+ * 7.0 Conference Schedule (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntSchedule {
+    padding-bottom: 120px;
+}
+
+.ntSchedule .ntSubTitle {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* tab */
+ul.ntScheduleTab {
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+ul.ntScheduleTab li a.active {
+    color: #ffffff;
+    border-color: #ed1c94;
+    background-color: #ed1c94;
+}
+
+ul.ntScheduleTab li a:hover {
+    color: #ffffff;
+    background: #ed1c94;
+    border-color: #ed1c94;
+}
+
+ul.ntScheduleTab li {
+    margin-right: 5px;
+}
+
+ul.ntScheduleTab li a {
+    padding: 5px 15px;
+    display: block;
+    border: 2px solid #4842e3;
+    color: #4842e3;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.ntBtnDownloadSchedule {
+    right: 0;
+    color: #4842e3;
+    bottom: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    position: absolute;
+    border-radius: 50px;
+    border: 2px solid #4842e3;
+    margin-bottom: 10px;
+}
+
+.ntBtnDownloadSchedule:hover {
+    color: #ed1c94;
+    border-color: #ed1c94;
+}
+
+/* Tab content */
+.ntTabContent {
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    background: #f7f9fb;
+}
+
+.ntTabContent .ntEvent {
+    overflow: hidden;
+}
+
+.ntTabContent .ntEvent .ntEventTime {
+    float: left;
+    width: 25.57319%;
+    text-align: right;
+    padding-right: 33px;
+    position: relative;
+    line-height: 1.82em;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ed1c94;
+}
+
+.ntTabContent .ntEvent .ntEventTime span {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #ed1c94;
+    position: absolute;
+    top: 17px;
+    right: -6px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ntTabContent .ntEvent .tnEventInfo {
+    float: left;
+    width: 74.42681%;
+    padding-left: 57px;
+    border-left: 1px solid #ed1c94;
+}
+
+.ntTabContent .ntEvent .ntEventTime,
+.ntTabContent .ntEvent .tnEventInfo h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4842e3;
+    line-height: 34px;
+}
+
+.ntTabContent .ntEvent .tnEventInfo h3 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.ntTabContent .ntEvent .tnEventInfo .ntSocialIcons {
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.tnEventInfo .ntSocialIcons a {
+    border-color: #ed1c94;
+    color: #ed1c94;
+}
+
+.tnEventInfo .ntSocialIcons a a:active,
+.tnEventInfo .ntSocialIcons a:focus,
+.tnEventInfo .ntSocialIcons a:hover {
+    border-color: #ed1c94;
+    background-color: #ed1c94;
+    color: #fff;
+}
+
+.ntTabContent .ntEvent hr {
+    border-color: #eee;
+}
+
+/*extend */
+.ntTabContent .ntEvent.extend span {
+    width: 31px;
+    height: 31px;
+    top: 7px;
+    right: -16px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.ntTabContent .ntEvent.extend .tnSpeakerName {
+    overflow: hidden;
+    margin-bottom: 35px;
+    line-height: 22px;
+}
+
+.ntTabContent .ntEvent.extend .tnSpeakerName .ntCaptionText {
+    overflow: hidden;
+    float: left;
+}
+
+.ntTabContent .ntEvent.extend .tnSpeakerName p {
+}
+
+.ntTabContent .ntEvent.extend .tnSpeakerName strong {
+    color: #4842e3;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ntTabContent .ntEvent.extend .ntCaption {
+    overflow: hidden;
+    display: block;
+    background: #ffffff;
+    padding: 25px 20px;
+    border: 1px solid #eee;
+}
+
+.ntTabContent .ntEvent.extend .ntCaption .ntImage {
+    display: block;
+    overflow: hidden;
+    width: 170px;
+    float: left;
+    margin-right: 25px;
+}
+
+.ntTabContent .ntEvent.extend .ntCaption .ntImage img {
+    border: 1px solid #eeeeee;
+    border-radius: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ntTabContent .ntEvent.extend .ntCaptionText {
+    width: 100%;
+}
+
+/**
+ * 8.0 Sponsorship (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntSponsorship {
+    background: #4842e3;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+    padding-bottom: 80px;
+}
+
+.ntSponsorship h2 {
+    color: #fff;
+}
+
+.ntSponsorship .ntSubTitle {
+    margin-bottom: 30px;
+}
+
+.ntPackages {
+    margin-top: 50px;
+    text-align: center;
+    color: #333;
+}
+
+.ntPackages .ntPackagesSuperTitle {
+    background: #f7f9fb;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 80px 0px 0px 0px;
+}
+
+.ntPackages .ntPackagesSuperTitle h4 {
+    font-size: 20px;
+}
+
+.ntPackages .ntPackagesSuperTitle h3 {
+    color: #333;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.ntPackages .ntPackagesSuperTitle h3 > i {
+    font-size: 65px;
+    color: #ed1c94;
+}
+
+.ntPackages h2 > i {
+    font-size: 50px;
+    color: #b1b1b1;
+}
+
+.ntPackagesDetails {
+    background: #fff;
+    border-radius: 0px 0px 80px 0px;
+}
+
+.ntPackagesDetails ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 40px 0;
+}
+
+.ntPackagesDetails ul li {
+    border-bottom: 2px dotted #dedede;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.ntPackages .ntPackagesDetails .btn-ntPrimaryBorder {
+    margin-bottom: 35px;
+}
+
+.ntPackages:hover .ntPackagesDetails .btn-ntPrimaryBorder {
+    border: 2px solid #ed1c94;
+    background-color: #ed1c94;
+    color: #ffffff;
+}
+
+/**
+ * 9.0 Sponsors & Partners (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntSponsors {
+    padding: 70px 0 100px 0;
+}
+
+.ntSponsors .ntSubTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ntSponsors header .ntSuperTitle {
+    margin-bottom: 30px;
+    color: #ed1c94;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ntSponsors .ntSponsorList {
+    background: #f8f8f8;
+    padding: 0px;
+    margin-bottom: 25px;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.ntSponsors .ntSponsorList:hover {
+    box-shadow: 0 10px 30px rgba(121, 121, 121, 0.27);
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.ntSponsors .ntSponsorList img {
+    margin: 0 auto;
+    display: block;
+    opacity: 0.5;
+}
+
+.ntSponsors .ntSponsorList:hover img{
+    opacity: 0.8;
+}
+
+/**
+ * 10.0 Register Now (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntRegister {
+    background: #4842e3;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.ntRegister h3 > b {
+    display: block;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.ntRegister h3 {
+    text-align: center;
+    font-size: 23px;
+    line-height: 34px;
+    font-weight: 100;
+}
+
+.ntRegister h2 {
+    color: #fff;
+}
+
+/*ntRegisterForm*/
+.ntRegisterForm {
+    padding-bottom: 80px;
+    background: #ffffff;
+}
+
+.ntRegisterForm .ntSubTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ntRegisterForm .ntSubmit {
+    width: 385px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.ntRegisterForm input,
+.ntRegisterForm select {
+    width: 100%;
+    padding: 13px 20px;
+    background: #ffffff;
+    border: 2px solid #eaeaea;
+    box-shadow: 1px 6px 10px #00000005;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #242732;
+    font-size: 15px;
+    line-height: 1.4em;
+    transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    margin: 10px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.ntRegisterForm input:focus,
+.ntRegisterForm select:focus {
+    box-shadow: 1px 6px 10px #eee;
+    border: 2px solid #4842e3;
+    outline: none
+}
+
+.ntRegisterForm .arrow {
+    position: relative;
+}
+
+.ntRegisterForm .arrow:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000000;
+    position: absolute;
+    right: 30px;
+    top: 33px;
+}
+
+#success {
+    position: fixed;
+    top: 89px;
+    z-index: 9;
+    right: 15px;
+}
+
+/*Ajax Validation*/
+span.error {
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    background:#e65858;
+    padding: 0px 5px;
+}
+
+span.error:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 6px 6px 0;
+    border-color:transparent #e65858;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -6px;
+    left: 20%;
+}
+
+/**
+ * 11.0 Contact (Section)
+ * -----------------------------------------------------------------------------
+ */
+
+.ntContact {
+    position: relative;
+}
+
+.ntContactDetails {
+    background-color:rgba(255, 255, 255, 0.96);
+    position: absolute;
+    z-index: 1;
+    left: auto;
+    right: 50%;
+    margin-right: -540px;
+    top: 45px;
+    overflow: hidden;
+    padding: 40px;
+    width: 350px;
+}
+
+.ntContactDetails h2 {
+    text-align: left;
+    font-weight: 900;
+    font-size:21px;
+}
+
+.ntContactDetails .ntSubTitle {
+    margin: 15px 0;
+}
+
+.ntContactDetails h5 {
+    font-weight: 700;
+}
+
+.ntContactDetails p:last-child {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .ntContactDetails {
+        margin-right: -450px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ntContactDetails {
+        margin-right: -43.5555%;
+    }
+}
+
+/*Google Map*/
+#map1 {
+    width: 100%;
+    height: 730px;
+}
+
+/**
+ * 12.0 Subscription and Social Media
+ * -----------------------------------------------------------------------------
+ */
+
+/* Subscribe */
+.ntSubscribe {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.ntSubscribe .form {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 7%;
+    padding-bottom: 13px;
+    bottom: 0;
+}
+
+.ntSubscribe form {
+    position: relative;
+}
+
+.ntSubscribe:before {
+    Content: '';
+    background-color: #4842e3;
+    position: absolute;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    bottom: 0;
+}
+
+.ntSubscribe:after {
+    Content: '';
+    background-color: #4842e3;
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    bottom: 0;
+}
+
+.ntSubscribe input[type=email] {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #4842e3;
+    border-radius: 50px;
+    padding: 15px 25px;
+    color: #333;
+    font-size: 16px;
+}
+
+.ntSubscribe button[type=submit] {
+    text-transform: uppercase;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 0 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: auto;
+    position: absolute;
+    background: #4842e3;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+}
+
+.ntSubscribeLeft {
+    position: absolute;
+    left: 0;
+    transform: translateX(-2%);
+    bottom: calc(0% - 0px);
+    display: flex;
+}
+
+.ntSubscribeRight {
+    position: absolute;
+    right: 0;
+    transform: translateX(0%);
+    bottom: calc(0% - 0px);
+    display: flex;
+}
+
+/* Social Media */
+.ntCommunity {
+    background-image: linear-gradient(to bottom, #4842e3 0%, #6a11cb 150%);
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.ntCommunity ul.ntSocialIcons {
+    width: 505px;
+    margin: 0 auto;
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.ntCommunity ul.ntSocialIcons li {
+    float: left;
+}
+
+.ntCommunity ul.ntSocialIcons a {
+    width: 72px;
+    height: 72px;
+    font-size: 31px;
+    line-height: 68px;
+    text-align: center;
+    margin: 0 6px;
+}
+
+.ntCommunity ul.ntSocialIcons li a > i {
+}
+
+.ntCommunity h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+.ntCommunity .ntSubTitle {
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff
+}
+
+.ntCommunity .line {
+    border-top: 1px solid #ffffff54;
+    display: block;
+    width: 66.666667%;
+    margin: 0 auto;
+    max-width: 66.666667%;
+}
+
+/*Social Media Icons*/
+.ntSocialIcons {
+    display: block;
+    margin-top: 15px;
+}
+
+.ntSocialIcons a {
+    color: #fff;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    line-height: 32px;
+    height: 35px;
+    font-size: 14px;
+    margin-right: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+}
+
+.ntSocialIcons a:active,
+.ntSocialIcons a:focus,
+.ntSocialIcons a:hover {
+    background-color: #ed1c94;
+    border-color: #ed1c94;
+}
+
+/**
+ * 13.0 Footer
+ * -----------------------------------------------------------------------------
+ */
+
+footer {
+    font-size: 14px;;
+    padding-bottom: 80px;
+}
+
+footer p {
+    margin-bottom: 0px;
+}
+
+footer .footnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .footnav ul li a {
+    color: #000;
+    text-decoration: underline;
+}
+
+footer .footnav ul li a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .foot-logo {
+    margin-top: 30px;
+}
+
+/**
+ * 14.0 Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+/* Desktop */
+@media screen and (max-width: 1199px) {
+    .ntOurSpeakersItem .overlay {
+        padding-top: 24%;
+    }
+    .ntSponsors .ntSponsorList img{
+        width: 100%;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .cd-nav-trigger {
+        display: block;
+    }
+}
+
+/* Tablet (landscape) */
+@media screen and (max-width: 991px) {
+    /*Main Title*/
+    .mainTitle {
+        width: 70%;
+    }
+
+    .mainTitle h1 {
+        font-size: 35px;
+        line-height: 32px;
+    }
+
+    .cd-headline.clip .cd-words-wrapper {
+        font-size: 55px;
+    }
+
+    .mainTitle span.where, .mainTitle span.when {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .mainTitle .location span i {
+        padding: 12px 15px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    /*Mobile Nav*/
+    .ntNavbar {
+        left: 0;
+        background: #fcfcfc;
+        padding: 10px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .ntNavbar li a {
+        line-height: 45px;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+    }
+
+    .ntNavbar li:last-child a {
+        border-bottom: 0;
+    }
+
+    .ntNavbar li a:before {
+        display: none;
+    }
+
+    .fixed .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+
+    .fixed .navbar-toggler {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .fixed .ntNavbar li a,
+    .fixed .ntNavbar {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    /*Button*/
+    .btn-ntPrimaryBorder,
+    .btn-ntPrimaryFull {
+        margin-right: 0;
+    }
+
+    .btn.ntMedium {
+        font-size: 11px;
+        padding: 12px 18px;
+    }
+
+    /* Statistic */
+    .ntCounter_type span.ntCounterTitle {
+        margin-bottom: 80px;
+    }
+
+    .ntCounter_type .col-md-3:last-child span.ntCounterTitle {
+        margin-bottom: 0px;
+    }
+
+    .ntCounter_type i {
+        left: 25%;
+    }
+
+    /* speaker */
+    .ntSubTitle {
+        margin-bottom: 36px;
+    }
+
+    .ntOurSpeakersItem .overlay {
+        padding-top: 20%;
+    }
+
+    /* conference schedule */
+    .ntTabContent .ntEvent.extend .ntCaption .ntImage {
+        float: initial;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .ntTabContent .ntEvent.extend .ntCaptionText {
+        text-align: center;
+    }
+
+    /* subscribe */
+    .ntSubscribe .form {
+        width: 80%;
+    }
+
+    .ntSubscribe:after,
+    .ntSubscribe:before {
+        width: 10%;
+    }
+
+}
+
+/* Tablet (portrait) */
+@media screen and (max-width: 767px) {
+    /* community */
+    .ntCommunity ul.ntSocialIcons {
+        width: 83%;
+    }
+
+    .ntCommunity ul.ntSocialIcons a {
+        width: 54px;
+        height: 54px;
+        font-size: 22px;
+        line-height: 54px;
+        margin-bottom: 10px;
+    }
+
+    .ntOurSpeakersItem .overlay {
+        padding-top: 40%;
+    }
+
+    /* subscribe */
+    .ntSubscribe .form {
+        width: 100%;
+        padding: 0 12%;
+    }
+
+    .ntSubscribe,
+    .ntSubscribeLeft,
+    .ntSubscribeRight,
+    .ntSubscribe:before,
+    .ntSubscribe:after {
+        display: none
+    }
+
+    ul.ntScheduleTab li .ntBtnDownloadSchedule {
+        display: none;
+    }
+    ul.ntScheduleTab{
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .ntSponsors .ntSponsorList img{
+        width: inherit;
+    }
+
+    /*footer*/
+    footer .footnav,
+    footer p {
+        margin-bottom: 25px;
+        padding-bottom: 0;
+    }
+
+    footer .foot-logo {
+        margin-top: 0px !important;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+
+    /* main title */
+    .mainTitle {
+        width: 90%;
+    }
+
+    /* community */
+    .ntContactDetails {
+        margin-right: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background: #f7f9fb;
+    }
+
+    .ntCommunity ul.ntSocialIcons {
+        width: 94%;
+    }
+
+    .ntCommunity ul.ntSocialIcons a {
+        width: 54px;
+        height: 54px;
+        font-size: 22px;
+        line-height: 54px;
+        margin-bottom: 10px;
+    }
+
+    .ntRegisterForm .ntSubmit {
+        width: 100%;
+    }
+
+    /*Register*/
+    .ntRegister h3 > b {
+        font-size: 23px;
+    }
+
+    .ntRegister h3 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .ntSubTitle {
+        font-size: 16px;
+    }
+
+    .ntSpeaker .btn {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+
+    ul.ntScheduleTab li a {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    /*Conference Schedule*/
+    .ntTabContent .ntEvent .tnEventInfo {
+        width: 95%;
+        margin-left: 15px;
+        padding-left: 20px;
+    }
+
+    .ntTabContent .ntEvent .ntEventTime {
+        width: 95%;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 35px;
+        font-size: 15px;
+    }
+
+    .ntTabContent .ntEvent .ntEventTime span {
+        top: 10px;
+        left: 11px;
+    }
+
+    .ntTabContent .ntEvent.extend span {
+        left: 0;
+        right: 0;
+        top: 2px;
+        width: 28px;
+        height: 28px;
+    }
+
+}
+
+/* Mini-Mobile */
+@media screen and (max-width: 320px) {
+
+    /* main title */
+    .mainTitle {
+        width: 88%;
+        left: 17px;
+        right: 0;
+    }
+
+    .mainTitle h1 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .mainTitle p {
+        display: none
+    }
+
+    span.line {
+        margin-bottom: 35px;
+    }
+
+    .cd-headline.clip .cd-words-wrapper {
+        font-size: 42px;
+    }
+
+    .mainTitle span.where, .mainTitle span.when {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .mainTitle .location span i {
+        padding: 12px 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    /* button */
+    .btn-ntPrimaryBorder, .btn-ntPrimaryFull {
+        margin-bottom: 15px;
+    }
+
+}
